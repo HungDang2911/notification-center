@@ -1,9 +1,8 @@
 package com.example.notificationcenter.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class User {
@@ -12,4 +11,6 @@ public class User {
     private long id;
     private String email;
     private String phoneNumber;
+    @OneToMany(mappedBy = "user")
+    private List<Device> devices;
 }
