@@ -1,4 +1,4 @@
-package com.example.notificationcenter.utils;
+package com.example.notificationcenter.helpers;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.mail.javamail.JavaMailSender;
