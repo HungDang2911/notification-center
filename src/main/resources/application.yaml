@@ -11,3 +11,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+  email:
+    host: ''
+    port: ''
+    username: ''
+    password: ''
+

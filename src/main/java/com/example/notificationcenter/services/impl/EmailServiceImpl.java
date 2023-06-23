@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class EmailServiceImpl implements EmailService {
-    private final JavaMailSender emailSender;
+
     private final KafkaTemplate<String, String> kafkaTemplate;
     private static final Logger logger = LoggerFactory.getLogger("Email");
     @Override
